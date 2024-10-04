@@ -1,3 +1,3 @@
 export let params = {
-  q: "",
+  title: "",
 };

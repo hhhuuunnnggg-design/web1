@@ -1,6 +1,7 @@
 //  đây là link  "/util/loaibut.js"
+import { API_Menu_LoaiBut, API_Menu_PhuKien } from "/util/link.js";
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("http://localhost:3000/loaibut")
+  fetch(API_Menu_LoaiBut)
     .then((response) => response.json())
     .then((data) => {
       let htmlLoaiBut = data
@@ -17,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("http://localhost:3000/phukien")
+  fetch(API_Menu_PhuKien)
     .then((response) => response.json())
     .then((data) => {
       let htmlPhuKien = data
