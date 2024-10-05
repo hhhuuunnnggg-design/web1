@@ -38,7 +38,7 @@
                 <i class="fa-solid fa-pen"></i><a href="#">Loại bút</a>
                 <div class="box-submenu">
                   <ul>
-                    <li><a href="#">Bút mới về ae</a></li>
+                    <li><a href="#">Bút------------ html</a></li>
                     <li><a href="#">Bút bi</a></li>
                     <li><a href="#">Bút dạ bi</a></li>
                     <li><a href="#">Bút dạ kim</a></li>
@@ -53,7 +53,7 @@
                 <a href="#">Phụ kiện</a>
                 <div class="box-submenu">
                   <ul>
-                    <li><a href="#">ruoottj bi</a></li>
+                    <li><a href="#">ruột -------------- html</a></li>
                     <li><a href="#">Bút bi</a></li>
                     <li><a href="#">Bút dạ bi</a></li>
                     <li><a href="#">Bút dạ kim</a></li>
@@ -77,11 +77,20 @@
     </div>
     <!-- end menu đa cấp -->
     <h2>Danh sách sản phẩm bút bi</h2>
+    <!-- search -->
     <div class="search" id="search">
       <input type="text" />
       <button>Search</button>
     </div>
 
+    <select id="filter">
+      <option value="mac-dinh">Mặc định</option>
+      <option value="gia-thap-den-cao">Gía thấp đến cao</option>
+      <option value="gia-cao-den-thap">Gía cao đến thấp</option>
+      <option value="giam-gia-nhieu">Giam giá nhiều</option>
+    </select>
+
+    <!-- end search -->
     <div id="products" class="product_list">
       <div class="product_item">
         <div class="product_image">
@@ -98,6 +107,13 @@
         </div>
       </div>
     </div>
+    <!-- phân trang -->
+    <div class="pagination">
+      <span class="pagination_buttun" id="paginationPrev">Prev</span>
+      <span class="pagination_number" id="paginationNumber">1</span>
+      <span class="pagination_buttun" id="paginationNext">Next</span>
+    </div>
+    <!-- end phân trang -->
     <!-- đây là phần chân -->
     <footer class="footer">
       <div class="footer-container">

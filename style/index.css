@@ -183,6 +183,41 @@ body {
   border-radius: 5px;
   border: 1px solid #e8c22e;
 }
+/* phân trang */
+.pagination {
+  display: flex;
+  justify-content: center; /* Canh giữa phân trang */
+  align-items: center;
+  margin: 20px 0;
+}
+
+.pagination_buttun {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination_buttun:hover {
+  background-color: #0056b3;
+}
+
+.pagination_number {
+  font-size: 18px;
+  padding: 10px;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.pagination_buttun:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* end phân trang */
 
 /* footer */
 .footer {
@@ -258,5 +293,4 @@ body {
     margin-bottom: 20px;
   }
 }
-
 /* end footer */
