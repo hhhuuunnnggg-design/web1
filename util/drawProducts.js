@@ -6,9 +6,9 @@ export const drawProducts = () => {
   // Tạo URL API với tham số phân trang
   let category = "";
   if (category != "") {
-    category = `&category=${params.category_loaibut}`;
+    category = `category=${params.category_loaibut}`;
   }
-  const aip = `${API_Product}?title=${params.title}&_sort=${params.sort}&_order=${params.order}&_page=${params.page}&_per_page=${params.limit}$`;
+  const aip = `${API_Product}?title=${params.title}&_sort=${params.sort}&_order=${params.order}&_page=${params.page}&_per_page=${params.limit}&category=${params.category_loaibut}`;
   console.log("API URL:", aip);
 
   fetch(aip)
@@ -23,12 +23,12 @@ export const drawProducts = () => {
       if (!responseData.data) {
         throw new Error("Không tìm thấy dữ liệu sản phẩm."); // Kiểm tra nếu không có field "data"
       }
-
+      console.log(responseData);
       const productsData = responseData.data;
 
       if (productsData.length === 0) {
         document.getElementById("products").innerHTML =
-          "<p>Không có sản phẩm nào được tìm thấy.</p>";
+          "<p>Không có sản phẩm nào được tìm thấy hoặc sản phẩm đã hết.</p>";
         return;
       }
 

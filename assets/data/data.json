@@ -2,9 +2,9 @@
   "products": [
     {
       "id": 1,
-      "title": "butbi",
+      "title": "bút test",
       "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
-      "category": "beauty",
+      "category": "bút bi",
       "price": 9.99,
       "discountPercentage": 7.17,
       "rating": 4.94,
@@ -14,7 +14,7 @@
     },
     {
       "id": 2,
-      "title": "Essence Mascara Lash Princess",
+      "title": "bút chì",
       "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
       "category": "bút bi",
       "price": 9.99,
@@ -26,7 +26,7 @@
     },
     {
       "id": 3,
-      "title": "Essence Mascara Lash Princess",
+      "title": "Bút thiên long nhân",
       "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
       "category": "bút bi",
       "price": 9.99,
@@ -37,8 +37,8 @@
       "thumbnail": "https://thegioibut.com/wp-content/uploads/2024/07/Allan-Dlious-AG0302RBK-1.jpg"
     },
     {
-      "id": 3,
-      "title": "Essence Mascara Lash Princess",
+      "id": 4,
+      "title": "bút hảo hảo",
       "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
       "category": "bút bi",
       "price": 9.99,
@@ -109,7 +109,7 @@
       "id": 6,
       "title": "Calvin Klein CK One",
       "description": "CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.",
-      "category": "fragrances",
+      "category": "bút bi",
       "price": 49.99,
       "discountPercentage": 0.32,
       "rating": 4.85,

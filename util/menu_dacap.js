@@ -1,4 +1,5 @@
 //  đây là link  "/util/loaibut.js"
+import { drawProducts } from "/util/drawProducts.js";
 import { API_Menu_LoaiBut, API_Menu_PhuKien } from "/util/link.js";
 import { params } from "/util/variable.js";
 //  loại bút
@@ -11,20 +12,21 @@ document.addEventListener("DOMContentLoaded", function () {
         .map((loai) => {
           return `
           <div class="category_but">
-            <li class="loaibut_item"><a href="#">${loai.name}</a></li>
+            <li >
+              <div class="loaibut_item">${loai.name}</div>
+            </li>
           </div>`;
         })
         .join("");
       document.querySelector(".loaibut .box-submenu ul").innerHTML =
         htmlLoaiBut;
 
-      // Sau khi render xong, lấy các item và thêm sự kiện click
-      const listLoaiBut = document.querySelectorAll(".loaibut_item a");
+      const listLoaiBut = document.querySelectorAll(".loaibut_item ");
       listLoaiBut.forEach((item) => {
         item.addEventListener("click", function (e) {
           e.preventDefault();
           params.category_loaibut = item.textContent.trim();
-
+          drawProducts();
           console.log(params);
         });
       });
